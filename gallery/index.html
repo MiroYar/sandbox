@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Пример галереи</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div id="gallery00" class="gallery">
+            <div class="slider">
+                <button class="btnleft"><span class="btnleft__arrow"></span></button>
+                <label for="slideshow"><input type="checkbox" checked="checked" id="slideshow" class="slideshow" title="Включить слайдшоу."> Slide-Show</label>
+                <button class="btnright"><span class="btnright__arrow"></span></button>
+                <div class="slider__wrapper">
+                    <img class="slider__item" src="https://i6.wampi.ru/2019/05/18/IMG_001_s.jpg" alt="" data-src-zoom="https://i7.wampi.ru/2019/05/18/IMG_001.jpg">
+                    <img class="slider__item" src="https://i6.wampi.ru/2019/05/18/IMG_002_s.jpg" alt="" data-src-zoom="https://i7.wampi.ru/2019/05/18/IMG_002.jpg">
+                    <img class="slider__item" src="https://i6.wampi.ru/2019/05/18/IMG_003_s.jpg" alt="" data-src-zoom="https://i7.wampi.ru/2019/05/18/IMG_003.jpg">
+                    <img class="slider__item" src="https://i6.wampi.ru/2019/05/18/IMG_004_s.jpg" alt="" data-src-zoom="https://i7.wampi.ru/2019/05/18/IMG_004.jpg">
+                    <img class="slider__item" src="https://i6.wampi.ru/2019/05/18/IMG_005_s.jpg" alt="" data-src-zoom="https://i7.wampi.ru/2019/05/18/IMG_005.jpg">
+                </div>
+            </div>
+            <div class="popup">
+                <button class="btnleft btnleft-popup"><span class="btnleft__arrow"></span></button>
+                <div class="popup__picture">
+                    <button class="closebtn"><span class="closebtn__cross"></span></button>
+                    <img class="popup__imgzoom" src="#" alt="">
+                    <button class="slideshowbtn" title="Cлайдшоу."><span class="slideshowbtn__icon"></span></button>
+                </div>
+                <button class="btnright btnright-popup"><span class="btnright__arrow"></span></button>
+            </div>
+        </div>
+        <script src="js/gallery.js"></script>
+    </body>
+</html>
