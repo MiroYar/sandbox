@@ -6,7 +6,7 @@
 body {
     background-color: var(--colbg);
     font-family: 'roboto', sans-serif;
-    font-size: 1.2vh;
+    font-size: 12px;
     font-weight: 400;
     color: black;
 }
