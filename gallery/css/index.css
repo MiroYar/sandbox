@@ -11,15 +11,12 @@ body {
     color: black;
 }
 
-#gallery00 {
-    margin: 10% auto;
-    box-sizing: border-box;
-    max-width: 590px;
-    height: 320px;
-}
-
 .gallery {
+    box-sizing: border-box;
+    margin: 10% auto;
     padding: 10px;
+    max-width: 570px;
+    height: 300px;
     background: linear-gradient(33deg, #e5e5e5, white);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
