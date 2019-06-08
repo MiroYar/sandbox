@@ -1,10 +1,9 @@
 "use strict";
 
-function Gallery(){
-    
+function Gallery(id){
     /*ФОРМИРОВАНИЕ СЛАЙДЕРА И СОЗДАНИЕ ОСНОВНЫХ ПЕРЕМЕННЫХ===============*/
     /*ПЕРЕМЕННЫЕ*/
-    let gallery = document.querySelector('#gallery00');
+    let gallery = document.querySelector(id);
     let slider = gallery.querySelector('.slider');
     let sliderWrapper = gallery.querySelector('.slider__wrapper');
     let sliderItemSRCArray = [];//Создание пустого массива с сылками на привью изображения.
@@ -84,7 +83,7 @@ function Gallery(){
 
 
     /*Функция предзагрузки первых слайдов на страницу*/
-    this.presetSlids = function(){
+    function presetSlids(){
         slidesNum = setArrayVariables(0);
         n = slidesNum - 2;//Искуственное смещение последнего индекса слайда чтобы первым отрисовался слайд с последним индексом из общего списка.
         for (let i=0; i< visFieldLength + 2; i++){
