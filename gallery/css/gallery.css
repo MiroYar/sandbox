@@ -40,7 +40,7 @@ body {
     transition: 1s ease;
 }
 
-label {
+.slider label {
     position: absolute;
     z-index: 1;
     left: 40%;
@@ -50,7 +50,7 @@ label {
     transition: 0.3s ease;
 }
 
-label:hover {
+.slider label:hover {
     color: #7ed1f2;
     text-shadow: 0 0 5px 0 #71bcd9;
 }
