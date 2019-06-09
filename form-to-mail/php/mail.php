@@ -52,3 +52,5 @@ $headers = "MIME-Version: 1.0" . PHP_EOL .
 'Reply-To: '.$to_email.'' . PHP_EOL;
 
 mail($to_email, adopt($form_subject), $message, $headers );
+
+?>
