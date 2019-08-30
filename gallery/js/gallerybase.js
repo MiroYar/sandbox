@@ -191,6 +191,7 @@ function Gallery(id){
     let SLIDESHOW_BTN = POPUP.querySelector('.slideshowbtn');
     let LEFT_BTNPOPUP = POPUP.querySelector('.btnleft');
     let RIGHT_BTNPOPUP = POPUP.querySelector('.btnright');
+    let GALLERY_BUBBLESPANEL = {};
 
     /*СОБЫТИЯ*/
     CLOSE_BTN.onclick = closeZoom;
@@ -202,7 +203,7 @@ function Gallery(id){
     /*Функция включения модального окна с увеличенным изображением.*/
     function zoom(){
         POPUP.style.display = 'grid';
-        console.log(this.naturalWidth + ' ' + this.naturalHeight);
+        GALLERY_BUBBLESPANEL = new BubblesPanel(`.gallery${id.replace(/\D/g, "")}__bubblepanel`);
         let srcZoom = this.dataset.srcZoom;
         let imgZoom = POPUP.querySelector('.popup__imgzoom');
         imgZoom.src = srcZoom;
@@ -214,6 +215,7 @@ function Gallery(id){
     /*Функция закрытия модального окна с увеличенным изображением.*/
     function closeZoom(){
         POPUP.style.display = 'none';
+        GALLERY_BUBBLESPANEL = null;
         let imgZoom = POPUP.querySelector('.popup__imgzoom');
         imgZoom.src = '#';
         if (slideshow != null){
