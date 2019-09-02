@@ -1,15 +1,13 @@
 input[type="checkbox"] {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+    width: 18px;
+    height: 18px;
+    margin: 0;
     border: 0;
     padding: 0;
-    left: 8px;
-    bottom: 0;
+    top: 0;
+    left: 0;
     white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
     overflow: hidden;
 }
  
